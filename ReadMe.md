@@ -41,7 +41,7 @@
 
 ### Kafka Streams
 ###### 1.Create topic : word-count-topic
-######## $> kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 4 --topic word-count-topic
+####### $> kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 4 --topic word-count-topic
 
 ### 2.Produce topic
 ###### $> kafka-console-producer --broker-list localhost:9092 --topic word-count-topic
@@ -52,6 +52,6 @@
 
 ### 4.Take a look at the results
 ###### $> kafka-console-consumer --topic word-count-output --from-beginning --bootstrap-server localhost:9092 --property print.key=true
-######## You can also check the original value sent in stream using simple consumer
+####### You can also check the original value sent in stream using simple consumer
 
 
